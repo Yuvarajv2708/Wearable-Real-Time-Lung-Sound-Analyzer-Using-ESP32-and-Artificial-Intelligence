@@ -1,34 +1,18 @@
-📦 Wearable-Real-Time-Lung-Sound-Analyzer-Using-ESP32-and-AI/
-├── 📄 README.md (comprehensive project overview)
-├── 📄 CITATION.cff (cite your work)
-├── 📄 LICENSE (MIT or Apache 2.0 recommended)
-├── 📁 code/
-│   ├── data_processing.py (CoughVID loading, feature extraction)
-│   ├── model_training.py (Random Forest training)
-│   ├── real_time_server.py (Flask server)
-│   ├── gui_monitor.py (PyQt interface)
-│   └── requirements.txt (dependencies)
-├── 📁 results/
-│   ├── confusion_matrix.csv
-│   ├── performance_metrics.json
-│   ├── robustness_results.csv
-│   └── sample_outputs.txt
-├── 📁 data/
-│   ├── sample_audio.wav (example file)
-│   ├── trained_model.pkl (Random Forest)
-│   └── README.md (data usage instructions)
-├── 📁 figures/
-│   ├── system_architecture.png
-│   ├── pipeline_flowchart.png
-│   ├── confusion_matrix.png
-│   ├── robustness_chart.png
-│   └── gui_screenshot.png
-├── 📁 hardware/
-│   ├── esp32_code.ino (Arduino code for ESP32)
-│   ├── circuit_diagram.png
-│   └── BOM.csv (Bill of Materials)
-├── 📁 paper/
-│   ├── lung_sound_ieee_final.tex
-│   ├── references.bib
-│   └── paper.pdf (compiled version)
-└── 📄 CONTRIBUTING.md
+# Wearable Real-Time Lung Sound Analyzer Using ESP32 and AI
+
+A proof-of-concept system for ambulatory respiratory health monitoring using commodity hardware and machine learning.
+
+## 🎯 Overview
+
+This project integrates an ESP32 microcontroller with an omnidirectional microphone to create an affordable wearable device for real-time lung sound analysis. Using MFCC-based feature extraction and Random Forest classification trained on the public CoughVID v3 dataset, the system achieves 72% accuracy with sub-second latency suitable for point-of-care and telemedicine applications.
+
+## 📊 Key Results
+
+- **Accuracy**: 72% (test set, 528 samples)
+- **Sensitivity**: 100% (abnormal detection rate)
+- **Latency**: 0.82 ± 0.11 seconds
+- **Battery Life**: 10+ hours continuous operation
+- **Cost**: USD 50-100 (vs. USD 500-5000 commercial devices)
+
+## 🏗️ System Architecture
+
